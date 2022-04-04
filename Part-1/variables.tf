@@ -17,7 +17,6 @@ variable "availability_zones" {
   type        = list(string)
   description = "the available availability_zones to provision an EC2 instance"
   default     = ["us-east-1a"]
-
 }
   
 variable "tags" {
