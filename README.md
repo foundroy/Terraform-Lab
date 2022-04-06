@@ -1,7 +1,7 @@
 # lab-03-terraform-assignment
 Terraform Assignment
 
-Objective:
+## Objective:
 * Use github as your code repository 
 * Make the repo private (invite me sebbycorp so i can view it)
 * Provide documentation within your repo in a readme.md file
