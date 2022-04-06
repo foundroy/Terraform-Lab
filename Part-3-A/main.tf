@@ -11,7 +11,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "tf-stack" {
+module "tf-local" {
   source = "./localrepo"
   project_tags =  {
     Name       = "tf-localrepo"
