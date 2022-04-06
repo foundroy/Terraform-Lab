@@ -9,22 +9,22 @@ resource "ec2_instance" "part-2" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file(local./Users/foundroy/Downloads/labkey.pem)
+    private_key = file("/Users/foundroy/Downloads/labkey.pem")
     host        = "ec2_instance.server.public_ip"
   }
   
   provisioner "remote-exec" {
     inline = [
     "sudo apt-get update",
-    "sudo apt-add-repository -y"
-    "sudo apt-get update"
-    "sudo apt-get install -y ansible"
-    "sudo apt install python3-pip -y"
-    "sudo pip install boto boto3"
-    "sudo apt-get install python3-boto -y"
-    "ansible-galaxy collection install amazon.aws"
-    "sudo "[localhost]" >> /etc/ansible/hosts"
-    "sudo "local" >> /etc/ansible/hosts"
+    "sudo apt-add-repository -y",
+    "sudo apt-get update",
+    "sudo apt-get install -y ansible",
+    "sudo apt install python3-pip -y",
+    "sudo pip install boto boto3",
+    "sudo apt-get install python3-boto -y",
+    "ansible-galaxy collection install amazon.aws",
+    "sudo "[localhost]" >> /etc/ansible/hosts",
+    "sudo "local" >> /etc/ansible/hosts",
     ]
   }
 }
