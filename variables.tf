@@ -11,6 +11,7 @@ variable "image_id" {
   validation { #fails if it cannot find a match
     condition     = can(regex("^ami-", var.image_id))
     error_message = "The image_id value must be a valid AMI id, starting with \"ami-\"."
+  }
 }
 
 variable "availability_zones" {

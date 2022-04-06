@@ -3,13 +3,13 @@ resource "ec2_instance" "part-2" {
   subnet_id                   = "subnet-0929ec2cae1e41a49"
   associate_public_ip_address = true
   instance_type               = "t2.micro"
-  security_group              = [aws_security_group.server.id]
+  security_group              = "default"
   key_name                    = "labkey"
 
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file(local.private_key_path)
+    private_key = file(local./Users/foundroy/Downloads/labkey.pem)
     host        = "ec2_instance.server.public_ip"
   }
   
