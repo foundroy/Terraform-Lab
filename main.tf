@@ -1,9 +1,3 @@
-provider "aws" {
-  region     = "us-east-1"
-  access_key = ""
-  secret_key = ""
-}
-
 resource "ec2_instance" "part-2" {
   ami                         = "ami-04505e74c0741db8d"
   subnet_id                   = "subnet-0929ec2cae1e41a49"
