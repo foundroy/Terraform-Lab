@@ -2,12 +2,12 @@
 Terraform Assignment
 
 Objective:
-- Use github as your code repository 
-- Make the repo private (invite me sebbycorp so i can view it)
-- Provide documentation within your repo in a readme.md file
-- make sure to have an .gitignore file 
-- When complete, upload your repo url to slate.
-- Make sure to taggs configured
+* Use github as your code repository 
+* Make the repo private (invite me sebbycorp so i can view it)
+* Provide documentation within your repo in a readme.md file
+* make sure to have an .gitignore file 
+* When complete, upload your repo url to slate.
+* Make sure to taggs configured
 
 ## Part - 1
 * Write a terraform script using aws ec2 instance and github and apply following kind of variables
