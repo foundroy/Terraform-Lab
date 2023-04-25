@@ -1,5 +1,4 @@
-# lab-03-terraform-assignment
-Terraform Assignment
+# Terraform-Lab
 
 ## Objective:
 * Use github as your code repository 
